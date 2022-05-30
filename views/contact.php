@@ -1,14 +1,19 @@
 <<h3> Contact </h3>
 
-<label for="lastName"> Nom:</label>
-<input type="text" name="lastName" id="lastName" placeholder="Nom de famille">
-<label for="firstName"> Prénom: </label>
-<input type="text" name="firstName" id="firstName" placeholder="Prénom"><br>
-<label for="dateOfBirth"> Date de naissance:</label>
-<input type="datetime-local" id="dateOfBirth" name="birthdaytime">
-<p>Choose your favourite Nintendo platform:</p>
-
 <form method=POST>
+  <label for="lastName"> Family Name:</label>
+  <input type="text" name="lastName" id="lastName" placeholder="ex: Smith" required>
+  <label for="firstName"> First Name: </label>
+  <input type="text" name="firstName" id="firstName" placeholder="ex: Jane" required><br>
+  <br>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email" placeholder="ex: xxx@xxx.com"required><br>
+  <br>
+  <label for="dateOfBirth"> Date of birth:</label>
+  <input type="datetime-local" id="dateOfBirth" name="birthdaytime"><br>
+
+  <p>Choose your favourite Nintendo platform:</p>
+
   <input type="radio" id="gameboy" name="fav_platform" value="GameBoy">
   <label for="gameboy">GameBoy</label><br>
   <input type="radio" id="gba" name="fav_platform" value="GameBoy Advance/SP">
@@ -21,12 +26,14 @@
   <label for="wii">Wii/WiiU</label><br>
   <input type="radio" id="switch" name="fav_platform" value="Switch">
   <label for="switch">Switch</label><br>
-</form> 
 
+<p></p>
+
+<label for="consoleColor">What's the color of your console?</label>
+<input type="color" id="consoleColor" name="consoleColor" value="#ff0000"> <br>
 
 <p>Choose your favourite video game licences:</p>
 
-<form method=POST>
   <input type="checkbox" id="mario" name="fav_licences" value="Super Mario & cie">
   <label for="mario">Super Mario & cie</label><br>
   <input type="checkbox" id="zelda" name="fav_licences" value="The Legend of Zelda">
@@ -35,10 +42,15 @@
   <label for="dragonQuest">Dragon Quest</label><br>
   <input type="checkbox" id="animalCrossing" name="fav_licences" value="Animal Crossing">
   <label for="animalCrossing">Animal Crossing</label><br>
-  <input type="checkbox" id="pokemon" name="fav_licences" value="Pokémon">
-  <label for="pokemon">Pokémon</label><br>
+  <input type="checkbox" id="pokemon" name="fav_licences" value="Pokemon">
+  <label for="pokemon">Pokemon</label><br>
+
+<p>How many games developped by Nintendo do you own?</p>
+
+    <input type="number" id="quantity" name="quantity" min="0" placeholder="ex:12"><br>
+  
+  <br><input type="reset"><br>
+  <br>
+  <label for ="Submit">Click the button to submit form :</label>
+  <br><input type="image" src="./assets/logo_switch_button.png" alt="Submit" width="48" height="48">
 </form> 
-
-
-
-<input type="submit" value="Submit">
