@@ -1,0 +1,60 @@
+@font-face {
+    font-family: ;
+    src: url("../fonts/");
+}
+
+
+body{
+    background-color: #ffffff
+}
+
+div.rawFruit{
+
+    background-color:#2cccc4 ;
+}
+
+div.rawFruit h4{
+
+}
+
+div.rawFruit p{
+    
+}
+
+div.orange{
+    background-color: #65c5f5;
+    background-image: url("../images/orange.jpg");
+    height: 395.2px;
+    width : 259.333px;
+    padding : 30px;
+    background-size: contain;
+}
+
+div.fruiDiet{
+    background-color: #478ac9;
+}
+
+.papaya{
+    background-color: #f9b701;
+
+}
+
+.dragonfruit{
+    background-color: #65e75f;
+
+}
+
+.pineapple{
+    background-color: #ffd33a;
+
+}
+
+.cherry{
+    background-color: #bbe9de;
+
+}
+
+.tangerine{
+    background-color: #6ac5f1;
+
+}
